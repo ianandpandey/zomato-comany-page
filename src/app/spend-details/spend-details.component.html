@@ -1,0 +1,25 @@
+<div class="companyCardsForNews">
+  <div class="heading-spend-container">
+    <div class="title">Spend Analysis</div>
+    <div class="view-more-cta">View More</div>
+  </div>
+  <div class="spend-details-container">
+    <div class="chart-container">
+      <canvas baseChart [data]="chartData" [options]="chartOptions" [type]="chartType"></canvas>
+    </div>
+    <div class="table-container">
+      <div class="spend-item-header">
+      </div>
+      <div class="spend-item" *ngFor="let item of tableData">
+        <div class="legend-dot" [style.backgroundColor]="item.color"></div>
+        <span class="category">{{ item.category }}</span>
+        <span class="value">{{ item.year1 }}%</span>
+        <span class="value">{{ item.year2 }}%</span>
+      </div>
+      <div class="spend-footer">
+        <span>1 Year</span>
+        <span>2 Year</span>
+      </div> 
+    </div>
+  </div>
+</div>

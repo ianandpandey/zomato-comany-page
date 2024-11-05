@@ -1,0 +1,304 @@
+.overviewBody {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+}
+
+.rightDiv{
+  display: flex;
+  width: 100%;
+  // gap: 22px;
+  flex-direction: column;
+}
+
+.rightDivContainer{
+  display: flex;
+  gap: 22px;
+}
+
+.firstDiv {
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  height: min-content;
+}
+
+.secondDivMain {
+  width: 50%;
+}
+
+.thirdDiv{
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  height: fit-content;
+  margin-bottom: 20px;
+
+}
+
+.thirdDivMain{
+  width: 50%;
+  
+}
+
+.secondDiv {
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.spendDetailsDiv{
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.spac-content {
+  font-size: 10px;
+  background-color: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 12px;
+  color: #000;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.websiteLink {
+  color: #2596ff;
+  font-size: 13px;
+}
+
+.companyInfo {
+  font-size: 13px;
+  color: #000000b7;
+  //   opacity: 60%;
+  font-weight: 400;
+}
+
+.financeSectionUpper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.financeSectionBottom {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.financeSection {
+  width: 100%;
+}
+
+.financeSectionDiv {
+  border: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.financeSectionDivBox {
+  display: flex;
+}
+
+.financeSectionDivBoxHeading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.financeSectionDivBoxHeading h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+// .ph-trend-up{
+//   font-weight: bold;
+// }
+
+.ph-caret-right,
+.ph-caret-left {
+  width: 16px;
+  font-weight: bold;
+  size: 16px;
+}
+
+.financeSectionOutput {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2596ff;
+  margin-top: 8px;
+}
+
+.companyCardsForFinHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-button {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 3px 3px;
+  // box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.select-button .label {
+  background-color: #e8f3ff;
+  color: #1a73e8;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.select-button .status {
+  color: #666;
+  font-size: 14px;
+  padding: 3px;
+}
+
+.employeeLists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 27px 0px;
+
+}
+
+.employeeList {
+  display: flex;
+  align-items: center;
+}
+
+.userIconName {
+  padding: 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.employeeName {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.employeePosition{
+  font-size: 12px;
+  color: #000000b9;
+}
+
+.employeeShowDetailCTA{
+  padding: 8px;
+  color: #2596FF;
+  background: #E9F5FF;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsList{
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.newslogo{
+  padding: 8px;
+  background: #F0F0F0;
+  height: 10%;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.ph-newspaper{
+  font-size: 22px;
+}
+
+.newsTitle{
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
+
+.newsDate {
+  color: #676767;
+}
+
+.newsDesc{
+  font-size: 12px;
+  font-weight: 700;
+  color: #676767;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 11px;
+
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.product img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-top: 10px;
+}
+
+.product-name {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+
+}
+
+.products-grid div:nth-child(odd) {
+  border-right: 1px solid #D9D9D9;
+  padding-right: 10px;
+}

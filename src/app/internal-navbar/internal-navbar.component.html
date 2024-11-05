@@ -1,0 +1,54 @@
+<div class="tab-container">
+    <div class="tab-options p-2">
+      <a href="javascript:" class="tab" (click)="selectOption('overview')"
+        [ngClass]="{'active': selectedOption === 'overview'}">Overview
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('financials')"
+        [ngClass]="{'active': selectedOption === 'financials'}">Financials
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('spendAnalysis')"
+        [ngClass]="{'active': selectedOption === 'spendAnalysis'}">Spend Analysis
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('employees')"
+        [ngClass]="{'active': selectedOption === 'employees'}">Employees
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('orgCharts')"
+        [ngClass]="{'active': selectedOption === 'orgCharts'}">Org Charts
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('employeeTrends')"
+        [ngClass]="{'active': selectedOption === 'employeeTrends'}">Employee Trends
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('buyerIntent')"
+        [ngClass]="{'active': selectedOption === 'buyerIntent'}">Buyer Intent
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('competitors')"
+        [ngClass]="{'active': selectedOption === 'competitors'}">Competitors
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('technologies')"
+        [ngClass]="{'active': selectedOption === 'technologies'}">Technologies
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('newsFeed')"
+        [ngClass]="{'active': selectedOption === 'newsFeed'}">News Feed
+      </a>
+      <a href="javascript:" class="tab" (click)="selectOption('jobs')"
+        [ngClass]="{'active': selectedOption === 'jobs'}">Jobs
+      </a>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div [ngSwitch]="selectedOption">
+      <app-overview *ngSwitchCase="'overview'"></app-overview>
+      <app-financials *ngSwitchCase="'financials'"></app-financials>
+      <app-spend-analysis *ngSwitchCase="'spendAnalysis'"></app-spend-analysis>
+      <app-employees *ngSwitchCase="'employees'"></app-employees>
+      <app-org-charts *ngSwitchCase="'orgCharts'"></app-org-charts>
+      <app-employee-trends *ngSwitchCase="'employeeTrends'"></app-employee-trends>
+      <app-buyer-intent *ngSwitchCase="'buyerIntent'"></app-buyer-intent>
+      <app-competitors *ngSwitchCase="'competitors'"></app-competitors>
+      <app-technologies *ngSwitchCase="'technologies'"></app-technologies>
+      <app-news-feed *ngSwitchCase="'newsFeed'"></app-news-feed>
+      <app-jobs *ngSwitchCase="'jobs'"></app-jobs>
+    </div>
+  </div>
+  

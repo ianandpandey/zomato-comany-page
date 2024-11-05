@@ -1,0 +1,170 @@
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #ff6600;
+    color: #ff6600;
+}
+
+.navbar .dropdown-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+nav{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.utilities{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #676767;
+
+}
+
+.utilities span{
+    color: #222222;
+}
+
+.links{
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+}
+
+
+.links a{
+    color: #222222;
+    margin-right: 18px;
+    font-size: 13px;
+}
+
+.navSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-name{
+    background: #f9e5d7;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.companyNameSection{
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 28px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.companyInfoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.companyInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.companyInfo h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.companyInfo h3{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.companyRightSide{
+    display: flex;
+}
+.companyLogo{
+    margin-right: 12px;
+    height: 50px;
+    width: 50px;
+}
+
+.companyLogo img{
+    height: 50px;
+    width: 50px;
+    margin-right: 12px;
+}
+
+.fill-likedin-logo-clr{
+    color: #2596FF;
+}
+
+.companyRightSide{
+    gap: 12px;
+}
+
+.notificationIcon{
+    font-size: 16px;
+    padding: 6px 6px;
+    background: #F0F0F0;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    color: #676767;
+
+}
+
+.shareIcon{
+    font-size: 16px;
+    padding: 6px 6px;
+    background: #F0F0F0;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    color: #676767;
+}
+
+.saveBTN button{
+    background-color: #2596FF;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.nav-tabs .nav-link {
+    color: #495057;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+    color: #000;
+}
