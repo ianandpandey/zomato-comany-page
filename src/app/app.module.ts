@@ -15,6 +15,7 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { NgChartsModule } from 'ng2-charts';
 import { SpendDetailsComponent } from './spend-details/spend-details.component';
+import { CompetitorDetailsComponent } from './competitor-details/competitor-details.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { SpendDetailsComponent } from './spend-details/spend-details.component';
     NewsFeedComponent,
     JobsComponent,
     SpendDetailsComponent,
+    CompetitorDetailsComponent,
   ],
   imports: [
     BrowserModule,

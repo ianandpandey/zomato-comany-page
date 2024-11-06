@@ -1,1 +1,17 @@
-<p>news-feed works!</p>
+<div class="news-list">
+    <div *ngFor="let newsItem of newsItems | slice:0:displayLimit" class="news-card">
+        <div class="icon">
+            <div class="newslogo"><i class="ph ph-newspaper"></i></div>
+        </div>
+        <div class="content">
+            <div class="news-title">{{ newsItem.title }}</div>
+            <div class="news-date">{{ newsItem.date }}</div>
+            <p>{{ newsItem.description }}</p>
+        </div>
+    </div>
+</div>
+
+<button *ngIf="displayLimit < newsItems.length" (click)="showMore()" class="show-more-btn">
+    Show More
+</button>
+
