@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ChartData, ChartOptions, Chart } from 'chart.js';
+import { ComponentNavigationService } from '../component-navigation.service';
+
 
 @Component({
   selector: 'app-spend-details',
@@ -7,6 +9,9 @@ import { ChartData, ChartOptions, Chart } from 'chart.js';
   styleUrls: ['./spend-details.component.scss']
 })
 export class SpendDetailsComponent {
+
+  selectedOption: String = '';
+
   chartType: 'doughnut' = 'doughnut';
 
   chartData: ChartData<'doughnut'> = {
@@ -51,8 +56,8 @@ export class SpendDetailsComponent {
       tooltip: {
         backgroundColor: '#fff',  // Black background for the tooltip
         titleColor: '#000',       // White color for the tooltip title
-        bodyColor: '#000',  
-        borderColor: '#000',     
+        bodyColor: '#000',
+        borderColor: '#000',
         titleFont: { size: 16, weight: 'bold' },
         bodyFont: { size: 14 },
         padding: 15,
@@ -85,8 +90,31 @@ export class SpendDetailsComponent {
     { category: 'Human Resources', year1: -2, year2: -1, color: '#DBEAFE' },
   ];
 
-  constructor() {
+  constructor(
+    private apiService: ComponentNavigationService
+
+  ) {
     // Register the custom plugin with Chart.js
     Chart.register(this.centerTextPlugin);
+  }
+
+  ngOnInit():void{
+
+    this.apiService.selectedTab$.subscribe((val) => {
+      console.log('val ', val);
+      this.selectedOption = val
+      console.log('selectedOption ', this.selectedOption);
+    })
+
+  }
+
+
+  changeTab(tabName : string){
+    console.log('tabame ', tabName);
+    this.apiService.updateSelectedTab(tabName);
+
+    this.selectedOption = tabName
+
+
   }
 }

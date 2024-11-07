@@ -1,13 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { ComponentNavigationService } from '../component-navigation.service';
+
 
 @Component({
   selector: 'app-overview',
   templateUrl: './overview.component.html',
   styleUrls: ['./overview.component.scss']
 })
-export class OverviewComponent implements OnInit {
+export class OverviewComponent {
 
-  constructor() { }
+
+  constructor(
+    private apiService: ComponentNavigationService
+  ) { }
 
   ngOnInit(): void {
   }
