@@ -98,7 +98,7 @@ export class SpendDetailsComponent {
     Chart.register(this.centerTextPlugin);
   }
 
-  ngOnInit():void{
+  ngOnInit(): void {
 
     this.apiService.selectedTab$.subscribe((val) => {
       console.log('val ', val);
@@ -109,12 +109,9 @@ export class SpendDetailsComponent {
   }
 
 
-  changeTab(tabName : string){
+  changeTab(tabName: string) {
     console.log('tabame ', tabName);
     this.apiService.updateSelectedTab(tabName);
-
     this.selectedOption = tabName
-
-
   }
 }
