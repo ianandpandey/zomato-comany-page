@@ -37,14 +37,20 @@
 }
 
 .category {
+  font-size: 13px;
+  font-weight: 400;
   flex-grow: 1;
   padding-left: 8px;
-  margin-right: 20px; /* Add space between category and year columns */
+  margin-right: 20px;
 }
 
 .value {
-  width: 130px; /* Increase width to create more spacing between year columns */
+  font-size: 13px;
+  font-weight: bold;
+  color: #00000085;
+  width: 100px; 
   text-align: right;
+  margin-right: 15px;
 }
 
 .spend-footer {
