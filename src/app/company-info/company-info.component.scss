@@ -1,0 +1,37 @@
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.spac-content {
+  font-size: 10px;
+  background-color: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 12px;
+  color: #000;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.websiteLink {
+  color: #2596ff;
+  font-size: 13px;
+}
+
+.companyInfo {
+  font-size: 13px;
+  color: #000000b7;
+  //   opacity: 60%;
+  font-weight: 400;
+}

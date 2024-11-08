@@ -1,0 +1,33 @@
+.newsList{
+    display: flex;
+    margin-bottom: 24px;
+  }
+  
+  .newslogo{
+    padding: 8px;
+    background: #F0F0F0;
+    height: 10%;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .ph-newspaper{
+    font-size: 22px;
+  }
+  
+  .newsTitle{
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .newsDate {
+    color: #676767;
+  }
+  
+  .newsDesc{
+    font-size: 12px;
+    font-weight: 700;
+    color: #676767;
+  }
+  

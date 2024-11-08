@@ -1,1 +1,32 @@
-<p>jobs works!</p>
+<div class="job-postings">
+    <h2>Job Postings</h2>
+    <p>{{ filteredJobPostings.length }}</p>
+
+    <!-- Date Range Filter -->
+    <div class="date-filters">
+        <button (click)="selectedDateRange = 'This Month'; applyFilters()">This Month</button>
+        <button (click)="selectedDateRange = '3 Months'; applyFilters()">3 Months</button>
+        <button (click)="selectedDateRange = '6 Months'; applyFilters()">6 Months</button>
+    </div>
+
+    <!-- Department Dropdown Filter -->
+    <div class="department-filter">
+        <select [(ngModel)]="selectedDepartment" (change)="applyFilters()">
+            <option value="">All Departments</option>
+            <option *ngFor="let dept of departments" [value]="dept">{{ dept }}</option>
+        </select>
+    </div>
+
+
+    <!-- Job Cards -->
+    <div class="job-card" *ngFor="let job of filteredJobPostings">
+        <div class="job-header">
+            <span class="hiring">Hiring</span>
+            <span>Posted - {{ job.postedDate | date }}</span>
+        </div>
+        <h3>{{ job.title }}</h3>
+        <p>{{ job.location }} {{ job.type }}</p>
+        <p>{{ job.description | slice:0:100 }}...</p>
+        <a href="#">View More</a>
+    </div>
+</div>

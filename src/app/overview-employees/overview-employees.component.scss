@@ -1,0 +1,73 @@
+.companyCardsForFinHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .select-button {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    padding: 3px 3px;
+    // box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select-button .label {
+    background-color: #e8f3ff;
+    color: #1a73e8;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .select-button .status {
+    color: #666;
+    font-size: 14px;
+    padding: 3px;
+  }
+  
+  .employeeLists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 27px 0px;
+  
+  }
+  
+  .employeeList {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userIconName {
+    padding: 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .employeeName {
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .employeePosition{
+    font-size: 12px;
+    color: #000000b9;
+  }
+  
+  .employeeShowDetailCTA{
+    padding: 8px;
+    color: #2596FF;
+    background: #E9F5FF;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }

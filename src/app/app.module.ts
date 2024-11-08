@@ -15,6 +15,14 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { NgChartsModule } from 'ng2-charts';
 import { SpendDetailsComponent } from './spend-details/spend-details.component';
+import { CompetitorDetailsComponent } from './competitor-details/competitor-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CompanyInfoComponent } from './company-info/company-info.component';
+import { OverviewFinanceHighlightsComponent } from './overview-finance-highlights/overview-finance-highlights.component';
+import { OverviewEmployeesComponent } from './overview-employees/overview-employees.component';
+import { OverviewRecentNewsComponent } from './overview-recent-news/overview-recent-news.component';
+import { OverviewCompanyProductsComponent } from './overview-company-products/overview-company-products.component';
 
 
 @NgModule({
@@ -33,10 +41,19 @@ import { SpendDetailsComponent } from './spend-details/spend-details.component';
     NewsFeedComponent,
     JobsComponent,
     SpendDetailsComponent,
+    CompetitorDetailsComponent,
+    CompanyInfoComponent,
+    OverviewFinanceHighlightsComponent,
+    OverviewEmployeesComponent,
+    OverviewRecentNewsComponent,
+    OverviewCompanyProductsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

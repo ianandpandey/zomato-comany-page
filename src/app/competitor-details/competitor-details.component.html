@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="header">
+        <div class="title">Zomato Competitors or Alternatives</div>
+        <a href="#" class="view-more-cta"  (click)="changeTab('competitors')">View All</a>
+    </div>
+    <div class="card-grid">
+        <div *ngFor="let competitor of competitors" class="card">
+            <div>
+                <img [src]="competitor.logo" [alt]="competitor.name + ' Logo'">
+            </div>
+            <div class="cards-title">{{ competitor.name }}</div>
+            <p>{{ competitor.description }}</p>
+            <div class="stats">
+                <span><i class="ph-fill ph-user"></i> {{ competitor.employees }}</span>
+                <span><i class="ph-fill ph-hand-coins"></i> {{ competitor.funding }}</span>
+            </div>
+        </div>
+    </div>
+</div>
