@@ -15,10 +15,6 @@ export class SankeyChartComponent implements OnInit {
 
   initChart() {
     this.chartOptions = {
-      // title: {
-      //   text: 'Acquisitions',
-      //   left: 'center'
-      // },
       tooltip: {
         trigger: 'item',
         triggerOn: 'mousemove'
@@ -29,20 +25,43 @@ export class SankeyChartComponent implements OnInit {
           emphasis: {
             focus: 'adjacency'
           },
-          nodeGap: 30,
-          nodeWidth: 20,
+          nodeGap: 30,  // Increased gap between nodes
+          nodeWidth: 10, // Slightly wider nodes
           label: {
-            color: '#000',
-            fontWeight: 'bold',
-            fontSize: 14
+            fontSize: 14,
+            rich: {
+              Zomato: {
+                backgroundColor: {
+                  image: 'https://res.cloudinary.com/dbmka9scm/image/upload/v1729598575/zomato_symbol.png_tgbgur.png'
+                },
+                height: 40,
+                width: 40,
+                align: 'center'
+              },
+              Blinkit: {
+                backgroundColor: {
+                  image: 'https://res.cloudinary.com/dbmka9scm/image/upload/v1731066616/blinkit_icon.jpeg_hdwpyu.png'
+                },
+                height: 30,
+                width: 30,
+                align: 'center'
+              },
+              UberEats: {
+                backgroundColor: {
+                  image: 'https://res.cloudinary.com/dbmka9scm/image/upload/v1731066616/UberEats_jmf2pt.png'
+                },
+                height: 30,
+                width: 30,
+                align: 'center'
+              },
+            },
+            formatter: (params: any) => {
+              return `{${params.name.replace(' ', '')}|} ${params.name}`;
+            }
           },
           itemStyle: {
             borderWidth: 1,
             borderColor: '#aaa'
-          },
-          lineStyle: {
-            color: 'gradient',
-            curveness: 0.5
           },
           data: [
             { name: 'Zomato' },
@@ -51,19 +70,22 @@ export class SankeyChartComponent implements OnInit {
             { name: 'Uber Eats' },
             { name: 'Runnr' },
             { name: 'TongueStun' },
-            { name: 'FITSO' }
+            { name: 'FITSO' },
+            { name: 'Grocery Delivery' },
+            { name: 'Green Box' },
           ],
           links: [
-            { source: 'Zomato', target: 'Blinkit', value: 10 },
-            { source: 'Zomato', target: 'Townrush', value: 15 },
-            { source: 'Zomato', target: 'Uber Eats', value: 25 },
-            { source: 'Zomato', target: 'Runnr', value: 30 },
-            { source: 'Zomato', target: 'TongueStun', value: 20 },
-            { source: 'Zomato', target: 'FITSO', value: 35 }
+            { source: 'Zomato', target: 'Blinkit', value: 10, lineStyle: { color: '#FFC107', curveness: 0.5 } },
+            { source: 'Zomato', target: 'Townrush', value: 15, lineStyle: { color: '#FF5252', curveness: 0.5 } },
+            { source: 'Zomato', target: 'Uber Eats', value: 25, lineStyle: { color: '#9E9E9E', curveness: 0.5 } },
+            { source: 'Zomato', target: 'Runnr', value: 30, lineStyle: { color: '#4CAF50', curveness: 0.5 } },
+            { source: 'Zomato', target: 'TongueStun', value: 20, lineStyle: { color: '#FF9800', curveness: 0.5 } },
+            { source: 'Zomato', target: 'FITSO', value: 35, lineStyle: { color: '#03A9F4', curveness: 0.5 } },
+            { source: 'Blinkit', target: 'Grocery Delivery', value: 10, lineStyle: { color: '#FFC107', curveness: 0.5 } },
+            { source: 'Blinkit', target: 'Green Box', value: 10, lineStyle: { color: '#FFC107', curveness: 0.5 } },
           ]
         }
       ]
     };
-    
   }
 }
