@@ -23,6 +23,8 @@ import { OverviewFinanceHighlightsComponent } from './overview-finance-highlight
 import { OverviewEmployeesComponent } from './overview-employees/overview-employees.component';
 import { OverviewRecentNewsComponent } from './overview-recent-news/overview-recent-news.component';
 import { OverviewCompanyProductsComponent } from './overview-company-products/overview-company-products.component';
+import { SankeyChartComponent } from './sankey-chart/sankey-chart.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 
 @NgModule({
@@ -47,13 +49,16 @@ import { OverviewCompanyProductsComponent } from './overview-company-products/ov
     OverviewEmployeesComponent,
     OverviewRecentNewsComponent,
     OverviewCompanyProductsComponent,
+    SankeyChartComponent,
+
     
   ],
   imports: [
     BrowserModule,
     NgChartsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxEchartsModule.forRoot({ echarts: () => import('echarts') })
   ],
   providers: [],
   bootstrap: [AppComponent]
