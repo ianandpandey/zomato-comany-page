@@ -28,7 +28,9 @@ export class GeoChartComponent implements OnInit {
       ['Canada', 500],
       ['France', 600],
       ['RU', 700],
-      ['AU', 100]
+      ['AU', 100],
+      ['India', 1000],
+      ['china', 100]
     ]);
 
     const options = {
