@@ -22,14 +22,11 @@ export class OverviewEmployeesComponent implements OnInit {
   ngOnInit(): void {
 
     this.apiService.selectedTab$.subscribe((val) => {
-      console.log('val ', val);
       this.selectedOption = val
-      console.log('selectedOption ', this.selectedOption);
     })
   }
 
   changeTab(tabName: string) {
-    console.log('tabame ', tabName);
     this.apiService.updateSelectedTab(tabName);
     this.selectedOption = tabName
   }
