@@ -25,6 +25,7 @@ import { OverviewRecentNewsComponent } from './overview-recent-news/overview-rec
 import { OverviewCompanyProductsComponent } from './overview-company-products/overview-company-products.component';
 import { SankeyChartComponent } from './sankey-chart/sankey-chart.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { GeoChartComponent } from './geo-chart/geo-chart.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     OverviewRecentNewsComponent,
     OverviewCompanyProductsComponent,
     SankeyChartComponent,
+    GeoChartComponent,
 
     
   ],
