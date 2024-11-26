@@ -77,8 +77,16 @@ export class SankeyChartComponent implements OnInit {
             { name: 'FITSO' },
             { name: 'Grocery Delivery' },
             { name: 'Green Box' },
+            { name: 'Child 1' },
+            { name: 'Child 2' },
           ],
           links: [
+            {
+              source: 'Zomato',
+              target: 'FITSO',
+              value: 30,
+              lineStyle: { color: '#FFC107', curveness: 0.5 },
+            },
             {
               source: 'Zomato',
               target: 'Blinkit',
@@ -110,8 +118,14 @@ export class SankeyChartComponent implements OnInit {
               lineStyle: { color: '#FF9800', curveness: 0.5 },
             },
             {
-              source: 'Zomato',
-              target: 'FITSO',
+              source: 'FITSO',
+              target: 'Child 1',
+              value: 30,
+              lineStyle: { color: '#03A9F4', curveness: 0.5 },
+            },
+            {
+              source: 'FITSO',
+              target: 'Child 2',
               value: 30,
               lineStyle: { color: '#03A9F4', curveness: 0.5 },
             },
