@@ -1,0 +1,132 @@
+.financeSectionUpper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .financeSectionBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .financeSection {
+    width: 100%;
+  }
+  
+  .financeSectionDiv {
+    border: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .financeSectionDivBox {
+    display: flex;
+  }
+  
+  .financeSectionDivBoxHeading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .financeSectionDivBoxHeading h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  
+  // .ph-trend-up{
+  //   font-weight: bold;
+  // }
+  
+  .ph-caret-right,
+  .ph-caret-left {
+    width: 16px;
+    font-weight: bold;
+    size: 16px;
+  }
+  
+  .financeSectionOutput {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2596ff;
+    margin-top: 8px;
+  }
+  
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .highlights {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .highlight-item {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .revenue-chart, .funding-chart {
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    height: min-content;
+  }
+  
+  canvas {
+    max-height: 400px;
+  }
+  
+
+  .finBody {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+  }
+
+  .firstDiv {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    height: min-content;
+  }
+  
+.rightDiv{
+    display: flex;
+    width: 100%;
+    gap: 22px;
+    flex-direction: column;
+  }
+
+
+  
+  .funding-details {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  canvas {
+    max-height: 400px;
+  }
+  

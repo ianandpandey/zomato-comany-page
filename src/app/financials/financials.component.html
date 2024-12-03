@@ -1,1 +1,88 @@
-<p>financials works!</p>
+<div class="finBody">
+
+    <div class="firstDiv">
+        <div class="companyCardsForFin">
+            <h3 class="title">Highlights</h3>
+
+            <div class="financeSectionUpper">
+                <div class="financeSection">
+                    <div class="financeSectionDiv">
+                        <div>
+                            <div class="financeSectionDivBoxHeading"><i class="ph ph-trend-up"></i>
+                                <h4>Annual Revenue</h4>
+                            </div>
+                            <div class="financeSectionOutput">$5M</div>
+                        </div>
+                        <div><i class="ph ph-caret-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="financeSection">
+                    <div class="financeSectionDiv">
+                        <div>
+                            <div class="financeSectionDivBoxHeading"><i class="ph ph-chart-bar"></i>
+                                <h4>No. of Funding Rounds</h4>
+                            </div>
+                            <div class="financeSectionOutput">3</div>
+                        </div>
+                        <div><i class="ph ph-caret-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="financeSectionBottom">
+                <div class="financeSection">
+                    <div class="financeSectionDiv">
+                        <div>
+                            <div class="financeSectionDivBoxHeading"><i class="ph ph-hand-coins"></i>
+                                <h4>Total Funding Amount</h4>
+                            </div>
+                            <div class="financeSectionOutput">$34M</div>
+                        </div>
+                        <div><i class="ph ph-caret-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="financeSection">
+                    <div class="financeSectionDiv">
+                        <div>
+                            <div class="financeSectionDivBoxHeading"><i class="ph ph-handshake"></i>
+                                <h4>Acquisitions</h4>
+                            </div>
+                            <div class="financeSectionOutput">1</div>
+                        </div>
+                        <div><i class="ph ph-caret-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="rightDiv">
+        <div class="revenue-chart">
+            <div class="companyCardsForFin">
+                <h3 class="title">Revenue Information</h3>
+                <canvas baseChart [data]="revenueData" [options]="chartOptions" [type]="'line'">
+                </canvas>
+            </div>
+        </div>
+        <div class="funding-chart">
+            <div class="companyCardsForFin">
+            <h3>Funding Information</h3>
+            <div class="funding-details">
+              <div>
+                <p><strong>Funding Amount:</strong> $2.46B</p>
+                <p><strong>Last Funding Date:</strong> 2021-10-08</p>
+                <p><strong>Funding Round:</strong> Series D</p>
+              </div>
+            </div>
+            <canvas baseChart
+                    [data]="fundingData"
+                    [options]="fundingChartOptions"
+                    [type]="'bar'">
+            </canvas>
+          </div>
+        </div>
+    </div>
+</div>
